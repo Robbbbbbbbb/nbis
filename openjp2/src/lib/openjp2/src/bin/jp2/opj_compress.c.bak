@@ -64,7 +64,6 @@
 /* MINGW32 */
 #elif __linux__
 /* Linux */
-#include <unistd.h>  /* PATCH APPLIED: Added unistd.h for Linux */
 #elif __unix__
 /* UNIX */
 #endif

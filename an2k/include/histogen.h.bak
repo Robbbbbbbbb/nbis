@@ -75,8 +75,7 @@ struct histo {
   HISTO *next;
 };
 
-/* The histo_head is declared as an external variable to be shared across multiple files */
-extern HISTO *histo_head;
+HISTO *histo_head;
 
 enum {
   INCLUDE_INVALID_FILES=5,
@@ -90,10 +89,11 @@ enum {
   TRUE=1
 };
 
-/******************************************************************************/ 
+/******************************************************************************/
 /* histogen.c */
 extern int process_file(const char *);
 extern int initialize_linked_list();
 extern int output_linked_list(FILE *);
 
 #endif /* !_HISTOGEN_H */
+

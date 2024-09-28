@@ -97,9 +97,6 @@ int  initialize_linked_list();
 int  update_linked_list();
 int  output_linked_list(FILE *);
 
-/* Linked list head definition */
-HISTO *histo_head;
-
 unsigned char c; /* used to convert ext to upper case */
 char *org;       /* used to store original pointer */
 char *ext;       /* used to store filename extension */
